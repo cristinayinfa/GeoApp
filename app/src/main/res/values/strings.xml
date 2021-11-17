@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GeoApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_button_text">Add</string>
+    <string name="result_view_text"> </string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="search_text_button">Search</string>
+    <string name="my_hint">Location</string>
+
+    <string name="search_text_button2">New Search</string>
+    <string name="longitude_str_textView">Longitude:</string>
+    <string name="latitude_str_textView">Latitude:</string>
+    <string name="delete_btn_text">Delete</string>
+</resources>
