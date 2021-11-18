@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         locationsList.setAdapter(customAdapter);
         locationsList.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
-
+        // Do search once the user enters characters and filter search everytime the text changes
         SearchView searchList = findViewById(R.id.searchbar);
         searchList.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
