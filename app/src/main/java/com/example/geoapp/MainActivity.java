@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         locationsList.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
 
-        SearchView search = findViewById(R.id.searchbar);
-        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        SearchView searchList = findViewById(R.id.searchbar);
+        searchList.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;

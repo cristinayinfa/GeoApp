@@ -63,8 +63,9 @@ public class AddLocation extends AppCompatActivity {
                    locationModel = new LocationModel(-1, addressStr, longitudeStr, latitudeStr);
                    DatabaseHelper dbHelper = new DatabaseHelper(AddLocation.this);
                    boolean success = dbHelper.addOne(locationModel);
+
                    if(success) {
-                       Toast.makeText(AddLocation.this, "created", Toast.LENGTH_SHORT).show();
+                       Toast.makeText(AddLocation.this, "Location added (:", Toast.LENGTH_SHORT).show();
                    }
                }
 
@@ -84,6 +85,7 @@ public class AddLocation extends AppCompatActivity {
                     latitudeStr = bundle.getString("latitude");
                     longitudeStr = bundle.getString("longitude");
                     resultStr = "Address: " + addressStr + "\nLongitude: " + longitudeStr + "\nLatitude: " + latitudeStr ;
+
                     break;
                 default:
                     addressStr = null;

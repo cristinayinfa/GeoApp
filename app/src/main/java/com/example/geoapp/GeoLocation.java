@@ -6,6 +6,7 @@ import android.location.Geocoder;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.List;
@@ -38,6 +39,7 @@ public class GeoLocation {
                         bundle.putString("latitude", latitudeStr);
                         bundle.putString("longitude", longitudeStr);
                         message.setData(bundle);
+
                     }
                     message.sendToTarget();
                 }
