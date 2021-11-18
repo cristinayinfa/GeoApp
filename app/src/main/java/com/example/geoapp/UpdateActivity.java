@@ -108,7 +108,6 @@ public class UpdateActivity extends AppCompatActivity {
         }
     }
 
-    // Prompt confirmation dialog for deletion
     void confirmDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Delete");
