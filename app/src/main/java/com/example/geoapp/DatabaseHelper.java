@@ -96,6 +96,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    // Function to delete specific item
     void deleteLocation(String row_id) {
         SQLiteDatabase db = this.getWritableDatabase();
         long remove = db.delete(LOCATION_TABLE, "id=?", new String[]{row_id});
@@ -125,6 +126,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    // hardcoded deafault database
     private LocationModel[] locations = {
             new LocationModel(1,"panama", "-80.782127", "8.537981"),
             new LocationModel(2,"taipei","121.56542680000001","-25.0329636"),
